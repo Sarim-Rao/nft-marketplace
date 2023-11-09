@@ -7,10 +7,10 @@ import WalletConnect from "../../Images/Connect_Wallet/WalletConnect.png";
 const connectHeroSec = () => {
   return (
     <>
-      <div className="bg-[#2B2B2B] flex flex-col items-center gap-[20px] md:flex-row md:gap-[40px] w-full h-full md:h-[535px] ">
+      <div className="bg-[#2B2B2B] flex flex-col items-center gap-[20px] md:flex-row md:gap-[40px] w-full h-full md:h-[691px] ">
         {/* left side  */}
         <div
-          className="!w-full md:!w-[50%] !bg-center !bg-cover h-[232px] md:!h-[535px]  relative"
+          className="!w-full md:!w-[50%] !bg-center !bg-cover h-[232px] md:!h-[691px]  relative"
           style={{ background: `url(${bannerImg})` }}
         ></div>
 

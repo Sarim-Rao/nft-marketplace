@@ -21,7 +21,7 @@ const MarketTabs = ({tab,setTab}) => {
             onClick={() => handleTab(1)}
           >
             <Link>
-              <div className="  flex justify-center font-sans text-[16px] md:text-[22px] font-[600] leading-[22px] md:leading-[30px]">
+              <div className="  flex justify-center gap-[16px] font-sans text-[16px] md:text-[22px] font-[600] leading-[22px] md:leading-[30px]">
                 <p>NFTs</p>
                 <span className="hidden md:block text-[#FFFFFF]  ml-[10px] text-[16px] font-mono font-[400] leading-[22px] bg-[#858584] rounded-[20px] py-[5px] px-[10px]">
                   302
@@ -37,8 +37,8 @@ const MarketTabs = ({tab,setTab}) => {
             onClick={() => handleTab(2)}
           >
             <Link>
-              <div className=" flex justify-center  font-sans text-[16px] md:text-[22px] font-[600] leading-[22px] md:leading-[30px]">
-                <p>Collection</p>
+              <div className=" flex justify-center gap-[16px] font-sans text-[16px] md:text-[22px] font-[600] leading-[22px] md:leading-[30px]">
+                <p>Collections</p>
                 <span className="hidden md:block text-[#FFFFFF] ml-[10px] text-[16px] font-mono font-[400] leading-[22px] bg-[#858584] rounded-[20px] py-[5px] px-[10px]">
                   67
                 </span>

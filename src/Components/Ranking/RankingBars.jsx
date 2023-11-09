@@ -20,7 +20,7 @@ const RankingBars = ({ RankingCards }) => {
             </div>
           </div>
 
-          <div className="w-[60%] flex items-center justify-around lg:justify-between py-[12px]">
+          <div className="w-[60%] flex items-center justify-end sm:justify-around lg:justify-between py-[12px]">
             <p className="text-[16px] hidden md:block font-[400] leading-[22px] font-mono text-[#858584]">
               Change
             </p>

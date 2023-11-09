@@ -5,7 +5,7 @@ const Nft = () => {
   return (
     <>
       <div
-        className="bg-cover bg-center bg-no-repeat w-full h-[320px] md:h-[420px] lg:h-[560px] lex flex-col items-center"
+        className="!bg-cover !bg-center !w-full h-[320px] md:h-[420px] lg:h-[560px] "
         style={{ backgroundImage: `URL(${nftBanner})` }}
       ></div>
       

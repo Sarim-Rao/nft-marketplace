@@ -13,7 +13,7 @@ const CreateAccCom = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center gap-[20px] md:flex-row md:gap-[40px] w-full h-full md:h-[691px] pt-[30px] pb-[40px] md:pb-[0] md:pt-[0]">
+      <div className="flex flex-col items-center gap-[20px] md:flex-row md:gap-[40px] w-full h-full md:h-[691px] pb-[40px] md:pb-[0] md:pt-[0]">
         {/* left side  */}
         <div
           className="!w-full md:!w-[50%] !bg-center !bg-cover h-[232px] md:!h-[691px]  relative"
