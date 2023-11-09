@@ -21,7 +21,7 @@ const Header = () => {
           </Link>
 
           {/* links  */}
-          <ul className="flex">
+          <ul className="flex gap-[10px]">
             <Link
               to="/marketplace"
               className="p-4 text-[16px] font-[600] text-[#FFFFFF] font-sans leading-[22px] cursor-pointer hover:scale-95  duration-300 "
