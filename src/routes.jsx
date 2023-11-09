@@ -7,6 +7,7 @@ import MarketPlace from "./Pages/MarketPlace";
 import Ranking from "./Pages/Ranking";
 import ConnectWallet from "./Pages/Auth/ConnectWallet";
 import CreateAccount from "./Pages/Auth/CreateAccount";
+import NotFound from "./Pages/NotFound";
 
 const routes =createBrowserRouter([
     {
@@ -42,9 +43,14 @@ const routes =createBrowserRouter([
                 path:"/createaccount",
                 element:<CreateAccount />
             }
+           
             
         ]
 
+    },
+    {
+        path:"*",
+       element: <NotFound/>
     }
 ])
 
