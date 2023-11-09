@@ -1,7 +1,7 @@
 import React from "react";
 import { BiHash } from "react-icons/bi";
 
-const RankingBars = ({ RankingCards }) => {
+const TableItems = ({ TableData }) => {
   const iconStyle = {
     color: "#858584",
     fontSize: "16px",
@@ -35,7 +35,7 @@ const RankingBars = ({ RankingCards }) => {
       </div>
 
       {
-        RankingCards.map((item)=>(
+        TableData.map((item)=>(
          <div className="max-w-[80%] container w-[100%] bg-[#3B3B3B] rounded-[20px] my-[20px] py-[12px] flex" key={item.id}>
 
           <div className="w-[60%] md:w-[40%] py-[12px]  relative">
@@ -73,4 +73,4 @@ const RankingBars = ({ RankingCards }) => {
   );
 };
 
-export default RankingBars;
+export default TableItems;

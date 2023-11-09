@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroSec from "../Components/Ranking/HeroSec";
 import Tabs from "../Components/Ranking/Tabs";
-import animakidAvatar from "../Images/TopCreators/animakidAvatar.png";
-import BlueWhaleAsset from "../Images/TopCreators/BlueWhaleAsset.png";
-import DigiLabAvatar from "../Images/TopCreators/DigiLabAvatar.png";
-import DotguAvatar from "../Images/TopCreators/DotguAvatar.png";
-import GhiblierAvatar from "../Images/TopCreators/GhiblierAvatar.png";
-import GravityOneAvatar from "../Images/TopCreators/GravityOneAvatar.png";
-import JuanieAvatar from "../Images/TopCreators/JuanieAvatar.png";
-import KeepitrealAvatar from "../Images/TopCreators/KeepitrealAvatar.png";
-import mrFoxAvatar from "../Images/TopCreators/mrFoxAvatar.png";
-import roboticaAvatar from "../Images/TopCreators/roboticaAvatar.png";
-import RustyRobotAvatar from "../Images/TopCreators/RustyRobotAvatar.png";
-import RankingBars from "../Components/Ranking/RankingBars";
+import TableItems from "../Components/Ranking/TableItems.jsx";
+
+import {
+  KeepitrealAvatar,
+    animakidAvatar,
+    BlueWhaleAsset,
+    DigiLabAvatar,
+    DotguAvatar,
+    GhiblierAvatar,
+    GravityOneAvatar,
+    JuanieAvatar,
+    mrFoxAvatar,
+    roboticaAvatar,
+    RustyRobotAvatar
+} from "../Images/TopCreators/index.js"
+
 
 const Ranking = () => {
-  const RankingCards = [
+
+  const [tab,setTab] = useState(1)
+
+  const TableData = [
     {
       id: 1,
       ArtistImage: animakidAvatar,
@@ -181,8 +188,8 @@ const Ranking = () => {
   return (
     <>
       <HeroSec />
-      <Tabs />
-      <RankingBars RankingCards={RankingCards} />
+      <Tabs tab={tab} setTab={setTab} />
+      <TableItems TableData={TableData} />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import nftBannerImage from "../../Images/nft-BannerImage.png";
-import avatar from "../../Images/NftImages/OrbitinAvatar.png";
+import {OrbitinAvatar} from "../../Images/NftImages/index.js"
 import Timer from "../Timer";
 import { FiEye } from "react-icons/fi";
 
@@ -21,7 +21,7 @@ const BannerImage = () => {
             <div className="flex flex-col gap-[30px]">
               <div className="bg-[#3B3B3B] h-[44px] w-[151px]  rounded-[20px] py-[10px] px-[20px] flex gap-[12px] items-center justify-center">
                 <div>
-                  <img src={avatar} alt="avatar" />
+                  <img src={OrbitinAvatar} alt="avatar" />
                 </div>
 
                 <div className="text-[16px] font-[400] leading-[22px] text-[#FFFFFF] font-sans">

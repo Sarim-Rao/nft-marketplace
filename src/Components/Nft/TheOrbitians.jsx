@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import orbitin from "../../Images/NftImages/OrbitinAvatar.png";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { Link } from "react-router-dom";

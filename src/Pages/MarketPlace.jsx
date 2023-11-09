@@ -1,33 +1,37 @@
 import React, { useState } from "react";
-import Marketbanner from "../Components/Marketplace/Marketbanner";
-import MarketTabs from "../Components/Marketplace/MarketTabs";
-import MagicMushroom from "../Images/MarketPlace/MagicMushroom0325.png";
-import HappyRobot032 from "../Images/MarketPlace/HappyRobot032.png";
-import HappyRobot024 from "../Images/MarketPlace/HappyRobot024.png";
-import DesignerBear from "../Images/MarketPlace/DesignerBear.png";
-import ColorfulDog0356 from "../Images/MarketPlace/ColorfulDog0356.png";
-import DancingRobot0312 from "../Images/MarketPlace/DancingRobot0312.png";
-import CherryBlossomGirl from "../Images/MarketPlace/CherryBlossomGirl.png";
-import SpaceTravel from "../Images/MarketPlace/SpaceTravel.png";
-import SunsetDimension from "../Images/MarketPlace/SunsetDimension.png";
-import DesertWalk from "../Images/MarketPlace/DesertWalk.png";
-import IceCreamApe0324 from "../Images/MarketPlace/IceCreamApe0324.png";
-import ShroomieAsset from "../Images/MarketPlace/ShroomieAsset.png";
-import BeKind2RobotsAsset from "../Images/MarketPlace/BeKind2RobotsAsset.png";
-import MrFoxAvatar from "../Images/MarketPlace/MrFoxAvatar.png";
-import KeepitrealAvatar from "../Images/MarketPlace/KeepitrealAvatar.png";
-import RoboticaAvatar from "../Images/MarketPlace/RoboticaAvatar.png";
-import MoonDancerAvatar from "../Images/MarketPlace/MoonDancerAvatar.png";
-import NebulaKidavatar from "../Images/MarketPlace/NebulaKidAvatar.png";
-import AnimakidAvatar from "../Images/MarketPlace/AnimakidAvatar.png";
-import Catch22Avatar from "../Images/MarketPlace/Catch22Avatar.png";
-import IceApeClubAvatar from "../Images/MarketPlace/IceApeClubAvatar.png";
-import PuppyPowerAvatar from "../Images/MarketPlace/PuppyPowerAvatar.png";
-import MarketplaceCards from "../Components/Marketplace/MarketplaceCards";
+import Banner from "../Components/Marketplace/Banner.jsx";
+import Tabs from "../Components/Marketplace/Tabs.jsx";
+import Cards from "../Components/Marketplace/Cards.jsx";
+
+import {
+  MagicMushroom,
+  HappyRobot032,
+  HappyRobot024,
+  DesignerBear,
+  ColorfulDog0356,
+  DancingRobot0312,
+  CherryBlossomGirl,
+  SpaceTravel,
+  SunsetDimension,
+  DesertWalk,
+  IceCreamApe0324,
+  ShroomieAsset,
+  BeKind2RobotsAsset,
+  MrFoxAvatar,
+  KeepitrealAvatar,
+  RoboticaAvatar,
+  MoonDancerAvatar,
+  NebulaKidavatar,
+  AnimakidAvatar,
+  Catch22Avatar,
+  IceApeClubAvatar,
+  PuppyPowerAvatar,
+} from "../Images/MarketPlace/index.js";
 
 const MarketPlace = () => {
   const [tab, setTab] = useState(1);
-  const MarketCardsSec = [
+
+  const MarketCards = [
     {
       id: 1,
       Image: MagicMushroom,
@@ -114,16 +118,16 @@ const MarketPlace = () => {
     },
   ];
 
-
-  const ReverseMarketCards = [...MarketCardsSec].reverse()
-  
+  const ReverseMarketCards = [...MarketCards].reverse();
 
   return (
     <>
-      <Marketbanner />
-      <MarketTabs tab={tab} setTab={setTab}/>
+      <Banner />
+      <Tabs tab={tab} setTab={setTab} />
       <div className="bg-[#3b3b3b] mb-[2px] py-[40px]">
-      <MarketplaceCards MarketCardsSec={tab === 1 ? MarketCardsSec : ReverseMarketCards} />
+        <Cards
+          MarketCards={tab === 1 ? MarketCards : ReverseMarketCards}
+        />
       </div>
     </>
   );

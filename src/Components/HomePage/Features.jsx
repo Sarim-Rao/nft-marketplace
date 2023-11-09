@@ -1,9 +1,12 @@
 import React from "react";
-import collection from "../../Images/How It Work/Collection.png";
-import Earning from "../../Images/How It Work/StartEarning.png";
-import wallet from "../../Images/How It Work/wallet.png";
 
-const HowItWorks = () => {
+import {
+  collection,
+    Earning,
+    wallet
+} from "../../Images/How_It_Work/index.js"
+
+const Features = () => {
   const Cards = [
     {
       id: 1,
@@ -31,7 +34,7 @@ const HowItWorks = () => {
   return (
     <>
       <div className="bg-[#2B2B2B] py-[80px]">
-        <div className="container flex flex-col gap-[20px] md:flex-row md:justify-between md:items-center">
+        <div className="max-w-[80%] container flex flex-col gap-[20px] md:flex-row md:justify-between md:items-center">
           <div className="max-w-[703px] w-[100%]">
             <p className="font-sans text-[28px] leading-[39px] md:leading-[45px] md:text-[38px] font-[600] text-[#FFFFFF]">
               How it works
@@ -58,13 +61,13 @@ const HowItWorks = () => {
 
                 <div className="flex flex-col gap-[10px] text-left lg:items-center max-w-[155px] w-[100%] lg:max-w-[270px] lg:w-full">
                   <p
-                    className="text-[#FFFFFF] text-[16px] font-[600] leading-[22px] font-sans lg:text-[18px]"
+                    className="text-[#FFFFFF] text-[16px] font-[600] leading-[22px] md:leading-[30px] font-sans lg:text-[22px]"
                   >
                     {item.heading}
                   </p>
 
                   <p
-                    className="text-[12px] lg:text-[16px]  text-left lg:text-center  leading-[16px] font-[400] text-[#FFFFFF] font-sans
+                    className="text-[12px] lg:text-[16px]  text-left lg:text-center leading-[16px] md:leading-[22px] font-[400] text-[#FFFFFF] font-sans
 "
                   >
                     {item.paragraph}
@@ -79,4 +82,4 @@ const HowItWorks = () => {
   );
 };
 
-export default HowItWorks;
+export default Features;

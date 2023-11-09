@@ -1,7 +1,7 @@
 import React from 'react'
 import nftBanner from "../../Images/NftImages/nftBanner.png"
 
-const Nft = () => {
+const BannerImage = () => {
   return (
     <>
       <div
@@ -13,4 +13,4 @@ const Nft = () => {
   )
 }
 
-export default Nft
+export default BannerImage

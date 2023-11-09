@@ -7,6 +7,7 @@ import TwitterLogo from "../assets/TwitterLogo.svg";
 import YoutubeLogo from "../assets/YoutubeLogo.svg";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Email from "./Email";
 
 const Footer = () => {
   return (
@@ -95,30 +96,10 @@ const Footer = () => {
               Get exclusive promotions & updates straight to your inbox.
             </p>
 
-            <div className="hidden md:flex max-w-[420px] w-full pl-[20px] bg-[#FFFFFF] rounded-[20px]">
-              <input
-                type="text"
-                placeholder="Enter your email here"
-                className="flex-1 border-none outline-none"
-              />
-              <button className=" h-[60px] px-[50px] bg-[#A259FF] rounded-[20px] text-[#FFFFFF] text-[16px] font-[600] font-sans
- hover:scale-95  duration-300">
-                Subscribe
-              </button>
-            </div>
+           
+            <Email/>
 
-            {/* for mobile  */}
-            <div className="flex flex-col gap-[16px] md:hidden ">
-              <input
-                type="text"
-                placeholder="Enter your email here"
-                className="pl-[20px] bg-[#FFFFFF] rounded-[20px] px-[20px] py-[16px] border-none outline-none"
-              />
-              <button className=" h-[46px] px-[50px] bg-[#A259FF] rounded-[20px] flex justify-center gap-[12px] items-center text-[#FFFFFF] text-[16px] font-[600] font-sans
-">
-                <AiOutlineMail /> Subscribe
-              </button>
-            </div>
+           
           </div>
         </div>
 

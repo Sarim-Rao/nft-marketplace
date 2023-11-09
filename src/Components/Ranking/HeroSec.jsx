@@ -3,7 +3,7 @@ import React from "react";
 const HeroSec = () => {
   return (
     <div className="bg-[#2B2B2B] py-[30px] md:py-[80px]">
-      <div className="md:max-w-[80%] container">
+      <div className="md:max-w-[90%] container">
         <p className="font-sans text-[28px] md:text-[51px] font-[600] leading-[56px] text-[#FFFFFF]">
           Top Creators
         </p>

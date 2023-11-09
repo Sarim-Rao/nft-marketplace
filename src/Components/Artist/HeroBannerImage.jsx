@@ -1,6 +1,6 @@
 import React from "react";
-import artistBanner from "../../Images/ArtistPage/artistBanner.png";
-import artistAvatar from "../../Images/ArtistPage/artistBannerAvatar.png";
+
+import { artistBanner, artistAvatar } from "../../Images/ArtistPage/index.js";
 
 const HeroBannerImage = () => {
   return (
@@ -12,7 +12,11 @@ const HeroBannerImage = () => {
 
       <div className="bg-[#3B3B3B] relative">
         <div className="container flex justify-center md:justify-start mx-auto ">
-          <img src={artistAvatar} alt="artistAvatar" className="absolute top-[-70px]" />
+          <img
+            src={artistAvatar}
+            alt="artistAvatar"
+            className="absolute top-[-70px]"
+          />
         </div>
       </div>
     </>

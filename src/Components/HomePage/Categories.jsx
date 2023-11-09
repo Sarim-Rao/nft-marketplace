@@ -1,6 +1,6 @@
 import React from "react";
 
-const BrowseCategories = ({ BrowseCategoriesCars, heading }) => {
+const Categories = ({ CategoriesCards, heading }) => {
   return (
     <>
       {heading && (
@@ -15,7 +15,7 @@ const BrowseCategories = ({ BrowseCategoriesCars, heading }) => {
 
       <div className="bg-[#2B2B2B]">
         <div className="md:max-w-[80%] container flex flex-wrap justify-center items-center  gap-[20px] w-[100%]">
-          {BrowseCategoriesCars.map((item) => (
+          {CategoriesCards.map((item) => (
             <div
               className="max-w-[240px] w-[45%] lg:w-[23%]  rounded-[20px] bg-[#3b3b3b] mb-[30px] hover:scale-95 duration-300 cursor-pointer"
               key={item.id}
@@ -41,4 +41,4 @@ const BrowseCategories = ({ BrowseCategoriesCars, heading }) => {
   );
 };
 
-export default BrowseCategories;
+export default Categories;

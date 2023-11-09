@@ -1,20 +1,25 @@
 import React from "react";
-import NftCom from "../Components/Nft/NftCom";
+import BannerImage from "../Components/Nft/BannerImage.jsx";
 import TheOrbitians from "../Components/Nft/TheOrbitians";
-import FoxyLife from "../Images/NftImages/FoxyLife.png";
-import CatfromFuture from "../Images/NftImages/CatfromFuture.png";
-import PsychoDog from "../Images/NftImages/PsychoDog.png";
-import DesignerBear from "../Images/NftImages/DesignerBear.png";
-import DancingRobot from "../Images/NftImages/DancingRobot.png";
-import DancingRobot1 from "../Images/NftImages/DancingRobot1.png";
-import DancingRobot2 from "../Images/NftImages/DancingRobot2.png";
-import DancingRobot3 from "../Images/NftImages/DancingRobot3.png";
-import DancingRobot4 from "../Images/NftImages/DancingRobot4.png";
-import cardAvatar from "../Images/NftImages/OrbitinAvatar.png";
-import NftCards from "../Components/Nft/NftCards";
+import Cards from "../Components/Nft/Cards.jsx";
+
+
+import {
+  FoxyLife,
+    CatfromFuture,
+    PsychoDog,
+    DesignerBear,
+    DancingRobot,
+    DancingRobot1,
+    DancingRobot2,
+    DancingRobot3,
+    DancingRobot4,
+    cardAvatar
+} from "../Images/NftImages/index.js"
+
 
 const Nft = () => {
-  const NftCardsSec = [
+  const NftCards = [
     {
       id: 1,
       Image: FoxyLife,
@@ -84,10 +89,10 @@ const Nft = () => {
 
   return (
     <>
-      <NftCom />
+      <BannerImage />
       <TheOrbitians />
       <div className="bg-[#2B2B2B] py-[60px]">
-        <NftCards heading={true} NftCardsSec={NftCardsSec} />
+        <Cards heading={true} NftCards={NftCards} />
       </div>
     </>
   );

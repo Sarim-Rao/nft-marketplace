@@ -2,31 +2,37 @@ import React from "react";
 import HeroSec from "../Components/HomePage/HeroSec";
 import TrendingCollection from "../Components/HomePage/TrendingCollection";
 import TopCreators from "../Components/HomePage/TopCreators";
-import KeepitrealAvatar from "../Images/TopCreators/KeepitrealAvatar.png";
-import animakidAvatar from "../Images/TopCreators/animakidAvatar.png";
-import BlueWhaleAsset from "../Images/TopCreators/BlueWhaleAsset.png";
-import DigiLabAvatar from "../Images/TopCreators/DigiLabAvatar.png";
-import DotguAvatar from "../Images/TopCreators/DotguAvatar.png";
-import GhiblierAvatar from "../Images/TopCreators/GhiblierAvatar.png";
-import GravityOneAvatar from "../Images/TopCreators/GravityOneAvatar.png";
-import JuanieAvatar from "../Images/TopCreators/JuanieAvatar.png";
-import mrFoxAvatar from "../Images/TopCreators/mrFoxAvatar.png";
-import roboticaAvatar from "../Images/TopCreators/roboticaAvatar.png";
-import RustyRobotAvatar from "../Images/TopCreators/RustyRobotAvatar.png";
-import ShroomieAvatar from "../Images/TopCreators/ShroomieAvatar.png";
-import BrowseCategories from "../Components/HomePage/BrowseCategories";
-import Category_Art from "../Images/Browse Cetagories/Category_Art.png";
-import Category_Collectibles from "../Images/Browse Cetagories/Category_Collectibles.png";
-import Category_Music from "../Images/Browse Cetagories/Category_Music.png";
-import Category_Photography from "../Images/Browse Cetagories/Category_Photography.png";
-import Category_Sport from "../Images/Browse Cetagories/Category_Sport.png";
-import Category_Utility from "../Images/Browse Cetagories/Category_Utility.png";
-import Category_Video from "../Images/Browse Cetagories/Category_Video.png";
-import Category_VirtualWords from "../Images/Browse Cetagories/Category_VirtualWorlds.png";
-import DiscoverMoreNFTs from "../Components/HomePage/DiscoverMoreNFTs";
+import Categories from "../Components/HomePage/Categories.jsx";
+import NftCards from "../Components/HomePage/NftCards.jsx";
 import BannerImage from "../Components/HomePage/BannerImage";
-import HowItWorks from "../Components/HomePage/HowItWorks";
-import WeeklyDigest from "../Components/HomePage/WeeklyDigest";
+import Features from "../Components/HomePage/Features.jsx";
+import Subscribe from "../Components/HomePage/Subscribe.jsx";
+
+import {
+  KeepitrealAvatar,
+  animakidAvatar,
+  BlueWhaleAsset,
+  DigiLabAvatar,
+  DotguAvatar,
+  GhiblierAvatar,
+  GravityOneAvatar,
+  JuanieAvatar,
+  mrFoxAvatar,
+  roboticaAvatar,
+  RustyRobotAvatar,
+  ShroomieAvatar} from "../Images/TopCreators/index.js"
+
+  import {
+    Category_Art,
+    Category_Collectibles,
+    Category_Music,
+    Category_Photography,
+    Category_Sport,
+    Category_Utility,
+    Category_Video,
+    Category_VirtualWords} from "../Images/Browse_Cetagories/index.js"
+
+
 
 const Home = () => {
   const TopCreatorsCards = [
@@ -94,7 +100,7 @@ const Home = () => {
 
 
 // BrowseCategories Data
-  const BrowseCategoriesCars = [
+  const CategoriesCards = [
     {
       id: 1,
       Img: Category_Art,
@@ -144,15 +150,15 @@ const Home = () => {
       <TrendingCollection />
       <TopCreators heading={true} TopCreatorsCards={TopCreatorsCards} />
       
-      <BrowseCategories
+      <Categories
         heading={true}
-        BrowseCategoriesCars={BrowseCategoriesCars}
+        CategoriesCards={CategoriesCards}
       />
      
-      <DiscoverMoreNFTs heading={true} />
+      <NftCards heading={true} />
       <BannerImage />
-      <HowItWorks />
-      <WeeklyDigest />
+      <Features />
+      <Subscribe />
     </>
   );
 };

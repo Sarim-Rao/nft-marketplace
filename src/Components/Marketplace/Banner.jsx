@@ -1,7 +1,7 @@
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
 
-const Marketbanner = () => {
+const Banner = () => {
   const iconStyle = {
     color: "#ffffff",
     fontSize: "24px",
@@ -13,14 +13,10 @@ const Marketbanner = () => {
       <div className="bg-[#2B2B2B] py-[80px]">
         <div className="container flex flex-col gap-[30px]">
           <div>
-            <p className="text-[#FFFFFF] font-[600] text-[51px] font-sans
-
- leading-[56px]">
+            <p className="text-[#FFFFFF] font-[600] text-[51px] font-sans leading-[56px]">
               Browse Marketplace
             </p>
-            <p className="text-[#FFFFFF] font-[400] text-[22px] font-sans
-
- leading-[55px]">
+            <p className="text-[#FFFFFF] font-[400] text-[22px] font-sans leading-[55px]">
               Browse through more than 50k NFTs on the NFT Marketplace.
             </p>
           </div>
@@ -40,4 +36,4 @@ const Marketbanner = () => {
   );
 };
 
-export default Marketbanner;
+export default Banner;

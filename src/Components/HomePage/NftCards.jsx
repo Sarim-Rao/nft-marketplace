@@ -1,14 +1,17 @@
 import React from "react";
 import { FiEye } from "react-icons/fi";
-import AstroFictionAvatar from "../../Images/Discover More NFTs/AstroFictionAvatar.png";
-import AstroFictionPlaceholder from "../../Images/Discover More NFTs/AstroFictionPlaceholder.png";
-import DistantGalaxyAvatar from "../../Images/Discover More NFTs/DistantGalaxyAvatar.png";
-import DistantGalaxyPlaceholder from "../../Images/Discover More NFTs/DistantGalaxyPlaceholder.png";
-import LifeOnEdenaAvatar from "../../Images/Discover More NFTs/LifeOnEdenaAvatar.png";
-import LifeOnEdenaPlaceholder from "../../Images/Discover More NFTs/LifeOnEdenaPlaceholder.png";
 import { Link } from "react-router-dom";
 
-const DiscoverMoreNFTs = ({ heading }) => {
+import {
+  AstroFictionPlaceholder,
+  DistantGalaxyPlaceholder,
+  LifeOnEdenaPlaceholder,
+  AstroFictionAvatar,
+  DistantGalaxyAvatar,
+  LifeOnEdenaAvatar,
+} from "../../Images/Discover_More_NFTs/index.js";
+
+const NftCards = ({ heading }) => {
   const style = { fontSize: "20px", color: "#A259FF" };
 
   const DiscoverData = [
@@ -69,18 +72,16 @@ const DiscoverMoreNFTs = ({ heading }) => {
               `}
                 key={item.id}
               >
-                <img src={item.Image} alt="" />
+                <img src={item.Image} alt="image" />
 
                 <div className="py-[20px] px-[30px] flex flex-col gap-[25px]">
-                  <p
-                    className="text-[#FFFFFF] leading-[30px] font-[600] text-[22px] font-sans">
+                  <p className="text-[#FFFFFF] leading-[30px] font-[600] text-[22px] font-sans">
                     {item.name}
                   </p>
 
                   <div className="flex items-center gap-[12px]">
                     <img src={item.avatar} alt="avatar" />
-                    <p
-                      className="text-[#FFFFFF] font-[400] text-[16px] font-mono">
+                    <p className="text-[#FFFFFF] font-[400] text-[16px] font-mono">
                       {item.avatarName}
                     </p>
                   </div>
@@ -118,4 +119,4 @@ const DiscoverMoreNFTs = ({ heading }) => {
   );
 };
 
-export default DiscoverMoreNFTs;
+export default NftCards;

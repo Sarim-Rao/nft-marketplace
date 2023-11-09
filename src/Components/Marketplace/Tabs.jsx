@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const MarketTabs = ({tab,setTab}) => {
+const Tabs = ({tab,setTab}) => {
   
 
 
@@ -51,4 +51,4 @@ const MarketTabs = ({tab,setTab}) => {
   );
 };
 
-export default MarketTabs;
+export default Tabs;
